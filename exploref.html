@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Explore | Winter Bazaar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="explore.css">
+</head>
+<body>
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+    <div class="nav-left">
+        <div class="logo"></div>
+        <h1 class="site-name">Winter Bazaar</h1>
+    </div>
+
+    <div class="nav-right">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="exploref.html" class="nav-link">Explore</a>
+        <a href="registorv.html" class="nav-link nav-btn">Register as Vendor</a>
+    </div>
+</nav>
+<!-- ================= HERO ================= -->
+<section class="explore-hero">
+    <div class="container">
+        <h2>Explore the Winter Bazaar</h2>
+        <p>Food, concerts, fun activities & cozy winter vibes — all in one place.</p>
+    </div>
+</section>
+<!-- ================= EXPERIENCE ================= -->
+<section class="experience">
+    <div class="container">
+        <h3 class="section-heading">What You Will Experience</h3>
+        <p class="section-line">
+            A perfect blend of entertainment, shopping, food & memories
+        </p>
+    </div>
+</section>
+<!-- ================= CONCERT ================= -->
+<section class="concert">
+    <div class="container">
+        <h3 class="section-heading">Live Concerts</h3>
+        <p class="highlight-line">
+            Don’t forget to miss the chance to meet your favorite singer!
+        </p>
+
+        <div class="video-box">
+
+    <!-- Background Video -->
+    <video autoplay muted loop playsinline class="bg-video">
+        <source src="assets/concertv.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+        </div>
+    </div>
+</section>
+<!-- ================= FOOD ================= -->
+<section class="food">
+    <div class="container">
+        <h3 class="section-heading">Food & Beverages</h3>
+
+        <div class="card-grid">
+
+            <div class="card">
+                <div class="img-box"></div>
+                <h4>Street Food</h4>
+                <p class="card-desc">
+                    Burgers, fries, chaat and delicious winter snacks.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="img-box"></div>
+                <h4>Desserts</h4>
+                <p class="card-desc">
+                    Cakes, sweets and desserts to satisfy your cravings.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="img-box"></div>
+                <h4>Hot Beverages</h4>
+                <p class="card-desc">
+                    Coffee, tea and warm drinks for cozy winter evenings.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="img-box"></div>
+                <h4>Winter Specials</h4>
+                <p class="card-desc">
+                    Seasonal food items crafted specially for the bazaar.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- ================= ACTIVITIES ================= -->
+<section class="activities">
+    <div class="container">
+        <h3 class="section-heading">Fun Activities</h3>
+
+        <div class="card-grid">
+
+            <div class="card">
+                <div class="img-box"></div>
+                <h4>Kids Play Area</h4>
+                <p class="card-desc">
+                    Safe and fun play zone for children of all ages.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="img-box"></div>
+                <h4>Games & Challenges</h4>
+                <p class="card-desc">
+                    Exciting games, prizes and friendly competitions.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="img-box"></div>
+                <h4>Bonfire Nights</h4>
+                <p class="card-desc">
+                    Enjoy warmth, music and cozy winter evenings.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="img-box"></div>
+                <h4>Family Fun</h4>
+                <p class="card-desc">
+                    Entertainment and activities for everyone.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- ================= COUNTDOWN ================= -->
+<!-- Countdown Timer Section -->
+<section id="event-timer">
+    <h2 class="timer-heading">Event Starts In</h2>
+    <div class="countdown">
+        <div class="time-box">
+            <span id="days">0</span>
+            <small>Days</small>
+        </div>
+        <div class="time-box">
+            <span id="hours">0</span>
+            <small>Hours</small>
+        </div>
+        <div class="time-box">
+            <span id="minutes">0</span>
+            <small>Minutes</small>
+        </div>
+        <div class="time-box">
+            <span id="seconds">0</span>
+            <small>Seconds</small>
+        </div>
+    </div>
+</section>
+<!-- ================= LOCATION ================= -->
+<section class="location">
+    <div class="container">
+        <h3 class="section-heading">Event Location</h3>
+        <p>Moin Khan Academy, Pakistan</p>
+
+        <div class="map-box">
+            <iframe 
+                src="https://maps.google.com/maps?q=Moin%20Khan%20Academy&t=&z=14&ie=UTF8&iwloc=&output=embed">
+            </iframe>
+        </div>
+    </div>
+</section>
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <div class="container footer-content">
+
+        <div>
+            <p><strong>Winter Bazaar</strong></p>
+            <p>Karachi • January 2025</p>
+        </div>
+
+        <div>
+            <p>📧 info@winterbazaar.com</p>
+            <p>📞 +92 300 1234567</p>
+        </div>
+
+    </div>
+</footer>
+<!-- ================= JS RELATION ================= -->
+<script src="countdown.js"></script> <!-- at the very end of body -->
+</body>
+</html>
+
