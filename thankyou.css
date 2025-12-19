@@ -1,0 +1,61 @@
+/* ================= BASIC RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+body{
+    background-color: aliceblue;
+}
+
+/* ================= THANK YOU SECTION ================= */
+.thankyou-section {
+    background-color: aliceblue;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.thankyou-container h1 {
+    font-size: 48px;
+    color: #0A2E5C; /* dark blue headline */
+    margin-bottom: 20px;
+}
+
+.thankyou-container p {
+    font-size: 18px;
+    color: #4A4A4A;
+    line-height: 1.6;
+}
+
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-right {
+        gap: 15px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .thankyou-container h1 {
+        font-size: 36px;
+    }
+
+    .thankyou-container p {
+        font-size: 16px;
+    }
+}

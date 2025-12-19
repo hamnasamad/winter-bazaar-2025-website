@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  /* ================= BASIC RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* ================= PAGE BACKGROUND ================= */
+.get-pass {
+    background-color: #FAF8F5;
+    padding: 80px 0;
+}
+
+/* ================= MAIN CONTAINER ================= */
+.pass-container {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+/* ================= HEADING ================= */
+.pass-container h2 {
+    font-size: 34px;
+    color: #3E3E3E;
+    margin-bottom: 10px;
+}
+
+.pass-subtext {
+    font-size: 16px;
+    color: #6A6A6A;
+    margin-bottom: 45px;
+}
+
+/* ================= FORM BOX ================= */
+.pass-form {
+    background-color: #FFFFFF;
+    padding: 40px;
+    border-radius: 22px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.06);
+    text-align: left;
+}
+
+/* ================= FORM GROUP ================= */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Labels */
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #4A4A4A;
+    margin-bottom: 6px;
+}
+
+/* Inputs, Select, Textarea */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 14px;
+    border: 1px solid #D6CFC4;
+    font-size: 14px;
+    outline: none;
+    background-color: #FFFFFF;
+}
+
+/* Focus Effect */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #C7B7A3;
+}
+
+/* Textarea resize off */
+.form-group textarea {
+    resize: none;
+}
+
+/* ================= CHECKBOX ================= */
+.form-check {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 22px 0;
+    font-size: 14px;
+    color: #4A4A4A;
+}
+
+.form-check input {
+    accent-color: #C7B7A3;
+}
+
+/* ================= SUBMIT BUTTON ================= */
+.form-btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    background-color: #0A2E5C; /* dark blue like navbar button */
+    color: #FFFFFF;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-btn:hover {
+    background-color: #dde4eb;
+    color: #000;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 600px) {
+
+    .pass-form {
+        padding: 28px;
+    }
+
+    .pass-container h2 {
+        font-size: 28px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <!-- ================= GET YOUR PASS SECTION ================= -->
+<section class="get-pass">
+
+    <div class="pass-container">
+
+        <h2 style="color: rgb(19, 19, 71);">Get Your Pass</h2>
+        <p class="pass-subtext">
+            Secure your entry pass and be part of the Winter Bazaar experience.
+        </p>
+
+        <!-- FORM SUBMIT START -->
+        <form 
+            class="pass-form" action="https://formsubmit.co/hamnasamad27@gmail.com" method="POST"
+        >
+
+            <!-- ===== FormSubmit Settings ===== -->
+            <!-- Disable captcha -->
+            <input type="hidden" name="_captcha" value="false">
+
+            <!-- Email subject -->
+            <input type="hidden" name="_subject" value="New Pass Registration - Winter Bazaar">
+
+            <!-- Thank you page (optional) -->
+            <input type="hidden" name="_next" value="thankyou.html">
+            <!-- ================================= -->
+
+            <!-- Full Name -->
+            <div class="form-group">
+                <label>Full Name</label>
+                <input 
+                    type="text" 
+                    name="Full Name" 
+                    placeholder="Enter your full name" 
+                    required
+                >
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label>Email Address</label>
+                <input 
+                    type="email" 
+                    name="Email" 
+                    placeholder="example@email.com" 
+                    required
+                >
+            </div>
+
+            <!-- Phone -->
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input 
+                    type="tel" 
+                    name="Phone Number" 
+                    placeholder="+92 300 1234567" 
+                    required
+                >
+            </div>
+
+            <!-- CNIC -->
+            <div class="form-group">
+                <label>CNIC / ID Number</label>
+                <input 
+                    type="text" 
+                    name="CNIC" 
+                    placeholder="12345-6789012-3" 
+                    required
+                >
+            </div>
+
+            <!-- Number of Passes -->
+            <div class="form-group">
+                <label>Number of Passes</label>
+                <select name="Number of Passes" required>
+                    <option value="">Select quantity</option>
+                    <option>1 Pass</option>
+                    <option>2 Passes</option>
+                    <option>3 Passes</option>
+                    <option>4 Passes</option>
+                </select>
+            </div>
+
+            <!-- Visit Date -->
+            <div class="form-group">
+                <label>Visit Date</label>
+                <input 
+                    type="date" 
+                    name="Visit Date" 
+                    required
+                >
+            </div>
+
+            <!-- Visit Time -->
+            <div class="form-group">
+                <label>Preferred Time Slot</label>
+                <select name="Time Slot" required>
+                    <option value="">Select time</option>
+                    <option>4 PM – 6 PM</option>
+                    <option>6 PM – 8 PM</option>
+                    <option>8 PM – 11 PM</option>
+                </select>
+            </div>
+
+            <!-- Pass Type -->
+            <div class="form-group">
+                <label>Pass Type</label>
+                <select name="Pass Type" required>
+                    <option value="">Select pass type</option>
+                    <option>Standard Pass-1500</option>
+                    <option>Family Pass-2000</option>
+                    <option>VIP Pass-2500</option>
+                </select>
+            </div>
+            <!-- Message -->
+            <div class="form-group">
+                <label>Special Notes (optional)</label>
+                <textarea 
+                    name="Special Notes" 
+                    rows="4" 
+                    placeholder="Any special request or note"
+                ></textarea>
+            </div>
+            <!-- Terms -->
+            <div class="form-check">
+                <input type="checkbox" id="pass-terms" required>
+                <label for="pass-terms">
+                    I agree to the terms and conditions
+                </label>
+            </div>
+            <!-- Submit -->
+            <button type="submit" class="form-btn">
+                Get My Pass
+            </button>
+        </form>
+        <!-- FORM SUBMIT END -->
+    </div>
+</section>
+<!-- ================= GET YOUR PASS END ================= -->
+
+</body>
+</html>
