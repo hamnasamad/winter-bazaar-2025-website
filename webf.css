@@ -187,7 +187,7 @@ body {
     height: 300px;               /* image height */
     border-radius: 20px;         /* rounded corners */
     background-color: #E3DACF;   /* fallback bg */
-    background-image: url(assets/pexels-brett-sayles-14353625.jpg); /* image */
+    background-image: url(assets/image1.jpg); /* image */
     background-size: cover;      /* cover container */
     background-position: center; /* center image */
 }
@@ -573,3 +573,4 @@ body {
 h1, h2, h3, h4 {
     color: #0A2E5C; /* unified heading color */
 }
+
